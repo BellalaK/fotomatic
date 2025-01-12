@@ -607,6 +607,10 @@ nav li {
   position: fixed;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -631,6 +635,14 @@ nav li {
   align-items: center;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
 .border-\[1px\] {
   border-width: 1px;
 }
@@ -653,12 +665,68 @@ nav li {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#9d\] {
+  background-color: #9d;
+}
+
+.bg-\[\#9dc\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 221 204 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#9dc20b\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(157 194 11 / var(--tw-bg-opacity, 1));
+}
+
 .p-\[1\.875rem\] {
   padding: 1.875rem;
 }
 
+.p-0 {
+  padding: 0px;
+}
+
+.py-\[o\.\] {
+  padding-top: o.;
+  padding-bottom: o.;
+}
+
+.py-\[o\.5rem\] {
+  padding-top: o.5rem;
+  padding-bottom: o.5rem;
+}
+
+.py-\[0\.1875rem\] {
+  padding-top: 0.1875rem;
+  padding-bottom: 0.1875rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-\[0\.5rem\] {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .pl-\[0\.75rem\] {
   padding-left: 0.75rem;
+}
+
+.leading-none {
+  line-height: 1;
+}
+
+.leading-\[1\.6\] {
+  line-height: 1.6;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .filter {
@@ -668,5 +736,19 @@ nav li {
 @media (min-width: 768px) {
   .md\:block {
     display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+
+  .md\:p-\[1\.875rem\] {
+    padding: 1.875rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:hidden {
+    display: none;
   }
 }

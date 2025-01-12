@@ -24,9 +24,11 @@
     <header
       class="fixed w-full border-b border-[1px] border-solid border-[#c6c1c1] bg-white"
     >
-      <div class="flex items-center p-[1.875rem]">
-        <a href="index.html" class="flex-1">Fotomatic</a>
+      <div class="flex items-center py-[0.5rem] md:p-[1.875rem]">
+        <!-- content -->
+        <a href="index.html" class="hidden md-block flex-1">Fotomatic</a>
         <nav class="hidden md:block">
+          <!-- desktop -->
           <ul>
             <li><a href="#">Product detail</a></li>
             <li><a href="#">About us</a></li>
@@ -41,20 +43,28 @@
             </li>
           </ul>
         </nav>
-        <nav class="hidden">
-          <ul>
-            <li>
+        <nav class="block w-full md:hidden">
+          <!-- mobile -->
+          <ul class="flex justify-around items-center w-full">
+            <li class="p-0">
               <a href="#"><img src="./resources/images/ic-logo.svg" /></a>
             </li>
-            <li>
+            <li class="p-0">
               <a href="#"
                 ><img src="./resources/images/ic-product-detail.svg"
               /></a>
             </li>
-            <li>
+            <li class="p-0">
               <a href="#"><img src="./resources/images/ic-about-us.svg" /></a>
             </li>
-            <li><a href="#" class="hidden">Join us</a></li>
+            <li class="p-0">
+              <a
+                href="#"
+                class="py-[0.1875rem] px-2 bg-[#9dc20b] leading-[1.6] text-white md:hidden"
+                >Join us</a
+              >
+            </li>
+            <!-- button -->
           </ul>
         </nav>
       </div>
