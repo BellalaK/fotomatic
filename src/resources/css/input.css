@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    /* universal styles */
+    html {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+    }
+
+    .main-content {
+        @apply relative top-[5.3125rem]; /* to offset for fixed header */
+    }
+
+    .center {
+        @apply text-center;
+    }
+
+    .button {
+        @apply rounded-[4px] bg-[#4a4a4a] text-white;
+    }
+
+    .image-container {
+        @apply overflow-hidden;
+    }
+
+    .image-container img {
+        @apply block;
+    }
+
+    @screen sm {
+        .main-content {
+            @apply top-[2.5625rem];
+        }
+    }
+
+    /* header */
+    header nav ul {
+       @apply flex;
+    }
+
+    nav li {
+        @apply pl-[3.5rem]
+    }
+}
