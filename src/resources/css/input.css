@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Damion');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,600,700');
+
 
 @layer base {
     /* universal styles */
@@ -33,14 +37,5 @@
         .main-content {
             @apply top-[2.5625rem];
         }
-    }
-
-    /* header */
-    header nav ul {
-       @apply flex;
-    }
-
-    nav li {
-        @apply pl-[3.5rem]
     }
 }
